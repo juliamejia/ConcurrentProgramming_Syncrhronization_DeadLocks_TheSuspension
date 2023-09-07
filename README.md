@@ -1,6 +1,7 @@
 
 ## Escuela Colombiana de Ingeniería
-### Arquitecturas de Software – ARSW
+### Arquitecturas de Software – ARSW  
+### Integrantes: Cristian Rodriguez y Julia Mejia
 
 
 #### Ejercicio – programación concurrente, condiciones de carrera y sincronización de hilos. EJERCICIO INDIVIDUAL O EN PAREJAS.
