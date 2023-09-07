@@ -22,7 +22,7 @@ import javax.swing.JTextField;
 import java.awt.Color;
 import javax.swing.JScrollBar;
 
-public class ControlFrame extends JFrame {
+public class    ControlFrame extends JFrame {
 
     private static final int DEFAULT_IMMORTAL_HEALTH = 100;
     private static final int DEFAULT_DAMAGE_VALUE = 10;
@@ -111,7 +111,9 @@ public class ControlFrame extends JFrame {
                 /**
                  * IMPLEMENTAR
                  */
-
+                for (Immortal immortal : immortals) {
+                    immortal.resumes();
+                }
             }
         });
 
@@ -128,6 +130,17 @@ public class ControlFrame extends JFrame {
         JButton btnStop = new JButton("STOP");
         btnStop.setForeground(Color.RED);
         toolBar.add(btnStop);
+        btnStop.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent event) {
+                for(Immortal i : immortals) {
+                    i.dead();
+                }
+
+                JOptionPane.showMessageDialog(null, "La simulacion ha sido detenida!");
+                System.exit(0);
+
+            }
+        });
 
         scrollPane = new JScrollPane();
         contentPane.add(scrollPane, BorderLayout.CENTER);
