@@ -186,7 +186,7 @@ Se implementaron y modificaron los siguientes metodos en la clase Immortal:
 	}
 	```
 
-Vemos que ya se cumple el invariante  
+	Vemos que ya se cumple el invariante  
 	<img width="351" alt="image" src="https://github.com/juliamejia/ConcurrentProgramming_Syncrhronization_DeadLocks_TheSuspension/assets/98657146/bd1445ee-ecc5-4750-8868-953a5bbb180c">  
 
 9. Una vez corregido el problema, rectifique que el programa siga funcionando de manera consistente cuando se ejecutan 100, 1000 o 10000 inmortales. Si en estos casos grandes se empieza a incumplir de nuevo el invariante, debe analizar lo realizado en el paso 4.
